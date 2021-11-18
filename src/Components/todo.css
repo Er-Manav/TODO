@@ -1,0 +1,8 @@
+button{
+    padding : 0.7rem;
+}
+
+#deleteTask{
+    background-color: red;
+    border-radius:20%;
+}
