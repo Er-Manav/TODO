@@ -39,20 +39,27 @@ handleDelete = (id) => {
 
     render() {
         return (
-            <div>
-                <input type="text" placeholder='Enter Task' value={this.state.currTask} onChange={this.handleChange}/> 
-                <button onClick={this.handleSubmit}>Submit</button>
+            <React.Fragment>
+            <div className="top">
+                <h1>To-Do List</h1>
+            </div>
+            <div className='container'>
+                <div id='inputt'>
+                <input id='inputText' type="text" placeholder='Enter Task' value={this.state.currTask} onChange={this.handleChange}/> 
+                <button id="addTask" onClick={this.handleSubmit}>Add</button>
+                </div>
                 <ul>
                 {
                     this.state.tasks.map((taskObj) =>(
                         <li key={taskObj.id}>
-                            <p>{taskObj.task}</p>
+                            <p><b>{taskObj.task}</b></p>
                             <button id='deleteTask' onClick={()=>this.handleDelete(taskObj.id)}>Delete</button>
                         </li>
                     ))
                 }
                 </ul>
             </div>
+            </React.Fragment>
         )
     }
 }

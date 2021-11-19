@@ -1,8 +1,50 @@
-button{
-    padding : 0.7rem;
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab&family=Nunito:wght@300&display=swap');
+.top h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Montagu Slab', serif;
+
+}
+#inputText{
+    border: 2px solid grey;
+    border-radius:5%;
+    padding: 1rem 2rem; 
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+.container{
+    
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    font-family: 'Montagu Slab', serif;
+    font-family: 'Nunito', sans-serif;
+    /* background:linear-gradient(black,grey);     */
+   
 }
 
+
+.container ul li{
+    display: flex;
+    justify-content: flex-end;
+    padding : 1rem;
+}
+
+.container ul li p{
+    padding-right: 2rem;
+}
+
+#addTask{
+    background-color: green;
+    border-radius:20%;
+    margin-top:10px;
+    color:white;
+    padding: 0.5rem 1rem;
+    
+}
 #deleteTask{
     background-color: red;
     border-radius:20%;
+    padding: 0px 0.5rem;
 }
